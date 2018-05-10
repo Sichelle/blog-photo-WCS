@@ -13,8 +13,8 @@
   <script src="https://use.fontawesome.com/02d39f4dd6.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
   integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
   <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
 </head>
@@ -55,178 +55,12 @@
       Journal
     </div>
 
-    <div class="row">
-
-
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <a href="articles.html">
-            <div class="thumbnail">
-              <img src="img/articles/1.jpg" alt="...">
-              <div class="caption">
-                <h3>Titre de l'article</h3>
-                <p>Les quelques premières ligne de l'artcile en tant qu'intro
-                  [...]
-                </p>
-
-              </div>
-
-            </div>
-          </a>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <a href="articles.html">
-            <div class="thumbnail">
-              <img src="img/articles/2.jpg" alt="...">
-              <div class="caption">
-                <h3>Titre de l'article</h3>
-                <p>Les quelques premières ligne de l'artcile en tant qu'intro
-                  [...]
-                </p>
-
-              </div>
-
-            </div>
-          </a>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <a href="articles.html">
-            <div class="thumbnail">
-              <img src="img/articles/3.jpg" alt="...">
-              <div class="caption">
-                <h3>Titre de l'article</h3>
-                <p>Les quelques premières ligne de l'artcile en tant qu'intro
-                  [...]
-                </p>
-
-              </div>
-
-            </div>
-          </a>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <a href="articles.html">
-            <div class="thumbnail">
-              <img src="img/articles/4.jpg" alt="...">
-              <div class="caption">
-                <h3>Titre de l'article</h3>
-                <p>Les quelques premières ligne de l'artcile en tant qu'intro
-                  [...]
-                </p>
-
-              </div>
-
-            </div>
-          </a>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <a href="articles.html">
-            <div class="thumbnail">
-              <img src="img/articles/5.jpg" alt="...">
-              <div class="caption">
-                <h3>Titre de l'article</h3>
-                <p>Les quelques premières ligne de l'artcile en tant qu'intro
-                  [...]
-                </p>
-
-              </div>
-
-            </div>
-          </a>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <a href="articles.html">
-            <div class="thumbnail">
-              <img src="img/articles/6.jpg" alt="...">
-              <div class="caption">
-                <h3>Titre de l'article</h3>
-                <p>Les quelques premières ligne de l'artcile en tant qu'intro
-                  [...]
-                </p>
-
-              </div>
-
-            </div>
-          </a>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <a href="articles.html">
-            <div class="thumbnail">
-              <img src="img/articles/7.jpg" alt="...">
-              <div class="caption">
-                <h3>Titre de l'article</h3>
-                <p>Les quelques premières ligne de l'artcile en tant qu'intro
-                  [...]
-                </p>
-
-              </div>
-
-            </div>
-          </a>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <a href="articles.html">
-            <div class="thumbnail">
-              <img src="img/articles/8.jpg" alt="...">
-              <div class="caption">
-                <h3>Titre de l'article</h3>
-                <p>Les quelques premières ligne de l'artcile en tant qu'intro
-                  [...]
-                </p>
-
-              </div>
-
-            </div>
-          </a>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <a href="articles.html">
-            <div class="thumbnail">
-              <img src="img/articles/9.jpg" alt="...">
-              <div class="caption">
-                <h3>Titre de l'article</h3>
-                <p>Les quelques premières ligne de l'artcile en tant qu'intro
-                  [...]
-                </p>
-
-              </div>
-
-            </div>
-          </a>
-        </div>
-
-        <div class="col-sm-12 col-md-6 col-lg-4">
-          <a href="articles.html">
-            <div class="thumbnail">
-              <img src="img/articles/10.jpg" alt="...">
-              <div class="caption">
-                <h3>Titre de l'article</h3>
-                <p>Les quelques premières ligne de l'artcile en tant qu'intro
-                  [...]
-                </p>
-
-              </div>
-
-            </div>
-          </a>
-        </div>
-
-
-
+    <div id ="blog" class="row">
 
 
     </div>
 
-
-    <a id="loadmore" class="loadmore">Load More</a>
-
+    <a id="loadmore" class="loadmore">Voir plus d'articles</a>
 
   </div>
 
@@ -246,43 +80,8 @@
 
   </footer>
 
-  <script>
-
-
-  // cache vars
-
-var parent = document.querySelector('.row'),
-    items  = parent.querySelectorAll('.col-sm-12'),
-    loadMoreBtn =  document.querySelector('#loadmore'),
-    maxItems = 6,
-    hiddenClass = "visually-hidden";
-
-
-  [].forEach.call(items, function(item, idx){
-      if (idx > maxItems - 1) {
-          item.classList.add(hiddenClass);
-      }
-  });
-
-  loadMoreBtn.addEventListener('click', function(){
-
-    [].forEach.call(document.querySelectorAll('.' + hiddenClass), function(item, idx){
-        console.log(item);
-        if (idx < maxItems - 1) {
-            item.classList.remove(hiddenClass);
-        }
-
-        if ( document.querySelectorAll('.' + hiddenClass).length === 0) {
-            loadMoreBtn.style.display = 'none';
-        }
-
-    });
-
-  });
-
-
-  </script>
-
+  <script src="js/blog-items.js"></script>
+  <script src="js/loadmore.js"></script>
 
 </body>
 
