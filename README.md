@@ -33,4 +33,4 @@ Members of the project :
 
 **DEMO**
 
-<a href="https://slowl.github.io/project-1-WCS/">Check out the website here !</a>
+<a href="https://slowl.github.io/blog-photo-WCS/">Check out the website here !</a>
